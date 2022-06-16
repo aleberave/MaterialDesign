@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyStyleFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="tint">@color/blue_600</item>
+    </style>
+
+    <style name="MyStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#034AFF</item>
+        <item name="helperTextEnabled">false</item>
+        <item name="counterEnabled">false</item>
+        <item name="errorTextColor">#034AFF</item>
+    </style>
+
+    <style name="MyChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="shapeAppearance">@style/MySmallShape</item>
+    </style>
+
+    <style name="MyTabStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabRippleColor">@drawable/my_ripple</item>
+        <item name="tabIndicatorAnimationMode">elastic</item>
+        <item name="tabIndicatorAnimationDuration">1000</item>
+    </style>
+
+    <style name="MyTextAppearance" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/cherry_cream_soda</item>
+        <item name="android:fontFamily">@font/cherry_cream_soda</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.2</item>
+    </style>
+
+    <style name="MySmallShape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <!--        <item name="cornerSize">50dp</item>  CAN'T CHANGE-->
+        <item name="cornerFamily">cut</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+    </style>
+
+    <style name="MyMediumShape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">40%</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+    </style>
+</resources>

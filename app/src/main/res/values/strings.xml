@@ -15,4 +15,8 @@
     <string name="today">Сегодня</string>
     <string name="yesterday">Вчера</string>
     <string name="TDBY">Позавчера</string>
+    <string name="menu1">Меню 1</string>
+    <string name="menu2">Меню 2</string>
+    <string name="menu3">Меню 3</string>
+    <string name="empty">""</string>
 </resources>

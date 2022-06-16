@@ -16,6 +16,7 @@ import ru.geekbrains.materialdesign.R
 import ru.geekbrains.materialdesign.databinding.FragmentPictureOfTheDayBinding
 import ru.geekbrains.materialdesign.utils.pathWikipedia
 import ru.geekbrains.materialdesign.view.MainActivity
+import ru.geekbrains.materialdesign.view.settings.SettingsFragment
 import ru.geekbrains.materialdesign.viewmodel.PictureOfTheDayAppState
 import ru.geekbrains.materialdesign.viewmodel.PictureOfTheDayViewModel
 import java.text.SimpleDateFormat
@@ -52,6 +53,9 @@ class PictureOfTheDayFragment : Fragment() {
             }
             R.id.app_bar_settings -> {
                 Log.i("@2", "app_bar_settings")
+                requireActivity().supportFragmentManager.beginTransaction()
+                    .replace(R.id.container, SettingsFragment.newInstance())
+                    .addToBackStack(getString(R.string.empty)).commit()
             }
             android.R.id.home -> {
                 BottomNavigationDrawerFragment.newInstance()
@@ -102,11 +106,21 @@ class PictureOfTheDayFragment : Fragment() {
                         this.viewModel.sendRequest(newMyDate)
                     }
                     R.id.yesterday -> {
-                        newMyDate = "${arr[2]}-${arr[1]}-${arr[0].toInt() - 1}"
+                        val number: Int = arr[0].toInt() - 1
+                        newMyDate = if (number > 0) {
+                            "${arr[2]}-${arr[1]}-$number"
+                        } else {
+                            "${arr[2]}-${arr[1]}-${arr[0]}"
+                        }
                         this.viewModel.sendRequest(newMyDate)
                     }
                     R.id.tdby -> {
-                        newMyDate = "${arr[2]}-${arr[1]}-${arr[0].toInt() - 2}"
+                        val number: Int = arr[0].toInt() - 2
+                        newMyDate = if (number > 0) {
+                            "${arr[2]}-${arr[1]}-$number"
+                        } else {
+                            "${arr[2]}-${arr[1]}-${arr[0]}"
+                        }
                         this.viewModel.sendRequest(newMyDate)
                     }
                 }

@@ -46,12 +46,13 @@ class PictureOfTheDayViewModel(
                     liveData.postValue(PictureOfTheDayAppState.Success(it))
                 }
             } else {
-                onFailure(call, response.errorBody() as Throwable)
+                // FIXME заменить response.errorBody()
+//                onFailure(call, response.errorBody() as Throwable)
             }
         }
 
         override fun onFailure(call: Call<PictureOfTheDayResponseData>, t: Throwable) {
-            TODO("Not yet implemented")
+            t.printStackTrace()
         }
 
     }

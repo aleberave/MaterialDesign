@@ -23,4 +23,11 @@
     <color name="blue_700">#1A1F68</color>
     <color name="blue_800">#12176C</color>
     <color name="blue_900">#01076A</color>
+
+    <color name="red">#AE0B0B</color>
+    <color name="green">#66EF12</color>
+    <color name="blue">#10B0F4</color>
+    <color name="ripple_color">#E8C002</color>
+    <color name="color_grey_red">#454343</color>
+
 </resources>
