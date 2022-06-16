@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        // TODO выводит правильно выбранную тему, но не применяет её
+        // TODO не применяет красную тему
         Log.i("@2 THEME", getCurrentTheme().toString())
     }
 

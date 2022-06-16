@@ -81,6 +81,16 @@ class SettingsFragment : Fragment() {
         })
     }
 
+    private fun setFocusable(view: View, focus: Boolean) {
+        view.isFocusable = focus
+        if (view is ViewGroup) {
+            val viewGroup = view
+            for (i in 0 until viewGroup.childCount) {
+                setFocusable(viewGroup.getChildAt(i), focus)
+            }
+        }
+    }
+
     fun setCurrentTheme(currentTheme: Int) {
         val sharedPreferences =
             requireActivity().getSharedPreferences(

@@ -2,20 +2,20 @@
     <!-- Base application theme. -->
     <style name="Theme.MaterialDesign" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="android:navigationBarColor">@color/blue_500</item>
-        <item name="colorPrimary">@color/blue_600</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorPrimaryContainer">@color/blue_100</item>
-        <item name="colorOnPrimaryContainer">@color/blue_900</item>
-        <item name="colorPrimaryInverse">@color/blue_200</item>
-        <item name="colorSecondary">@color/blue_600</item>
-        <item name="colorOnSecondary">@color/white</item>
-        <item name="colorSecondaryContainer">@color/blue_100</item>
-        <item name="colorOnSecondaryContainer">@color/blue_900</item>
-        <item name="colorTertiary">@color/blue_600</item>
-        <item name="colorOnTertiary">@color/white</item>
-        <item name="colorTertiaryContainer">@color/blue_100</item>
-        <item name="colorOnTertiaryContainer">@color/blue_900</item>
+        <item name="android:navigationBarColor">?superColor</item>
+        <item name="colorPrimary">?superColor</item>
+        <item name="colorOnPrimary">?superColor</item>
+        <item name="colorPrimaryContainer">?superColor</item>
+        <item name="colorOnPrimaryContainer">?superColor</item>
+        <item name="colorPrimaryInverse">?superColor</item>
+        <item name="colorSecondary">?superColor</item>
+        <item name="colorOnSecondary">?superColor</item>
+        <item name="colorSecondaryContainer">?superColor</item>
+        <item name="colorOnSecondaryContainer">?superColor</item>
+        <item name="colorTertiary">?superColor</item>
+        <item name="colorOnTertiary">?superColor</item>
+        <item name="colorTertiaryContainer">?superColor</item>
+        <item name="colorOnTertiaryContainer">?superColor</item>
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
