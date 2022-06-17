@@ -27,7 +27,7 @@
         <item name="android:fontFamily">@font/cherry_cream_soda</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">10sp</item>
         <item name="android:letterSpacing">0.2</item>
     </style>
 

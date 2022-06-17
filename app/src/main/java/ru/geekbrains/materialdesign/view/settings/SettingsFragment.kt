@@ -31,7 +31,7 @@ class SettingsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val context: Context =
-            ContextThemeWrapper(activity, getRealStyleLocal(getCurrentThemeLocal()))
+            ContextThemeWrapper(requireActivity(), getRealStyleLocal(getCurrentThemeLocal()))
         val localInflater = inflater.cloneInContext(context)
         _binding = FragmentSettingsBinding.inflate(localInflater)
         return binding.root
@@ -79,16 +79,6 @@ class SettingsFragment : Fragment() {
             }
 
         })
-    }
-
-    private fun setFocusable(view: View, focus: Boolean) {
-        view.isFocusable = focus
-        if (view is ViewGroup) {
-            val viewGroup = view
-            for (i in 0 until viewGroup.childCount) {
-                setFocusable(viewGroup.getChildAt(i), focus)
-            }
-        }
     }
 
     fun setCurrentTheme(currentTheme: Int) {

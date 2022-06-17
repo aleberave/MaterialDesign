@@ -1,6 +1,34 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.MaterialDesign" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:navigationBarColor">@color/blue_500</item>
+        <item name="colorPrimary">@color/blue_600</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/blue_100</item>
+        <item name="colorOnPrimaryContainer">@color/blue_900</item>
+        <item name="colorPrimaryInverse">@color/blue_200</item>
+        <item name="colorSecondary">@color/blue_600</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/blue_100</item>
+        <item name="colorOnSecondaryContainer">@color/blue_900</item>
+        <item name="colorTertiary">@color/blue_600</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorTertiaryContainer">@color/blue_100</item>
+        <item name="colorOnTertiaryContainer">@color/blue_900</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+
+        <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/MyStyle</item>
+        <item name="floatingActionButtonStyle">@style/MyStyleFloatingActionButton</item>
+        <item name="chipStyle">@style/MyChipStyle</item>
+
+        <item name="tabStyle">@style/MyTabStyle</item>
+        <item name="textAppearanceBody2">@style/MyTextAppearance</item>
+        <item name="shapeAppearanceMediumComponent">@style/MyMediumShape</item>
+    </style>
+
+    <style name="MyBaseTheme" parent="Theme.MaterialDesign">
         <!-- Primary brand color. -->
         <item name="android:navigationBarColor">?superColor</item>
         <item name="colorPrimary">?superColor</item>
@@ -16,28 +44,19 @@
         <item name="colorOnTertiary">?superColor</item>
         <item name="colorTertiaryContainer">?superColor</item>
         <item name="colorOnTertiaryContainer">?superColor</item>
-
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
-        <!-- Customize your theme here. -->
-        <item name="textInputStyle">@style/MyStyle</item>
-        <item name="floatingActionButtonStyle">@style/MyStyleFloatingActionButton</item>
-        <item name="chipStyle">@style/MyChipStyle</item>
-
-        <item name="tabStyle">@style/MyTabStyle</item>
-        <item name="textAppearanceBody2">@style/MyTextAppearance</item>
-        <item name="shapeAppearanceMediumComponent">@style/MyMediumShape</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?superColor</item>
     </style>
 
-    <style name="MyRedStyle" parent="Theme.MaterialDesign">
+    <style name="MyRedStyle" parent="MyBaseTheme">
         <item name="superColor">@color/red</item>
     </style>
 
-    <style name="MyBlueStyle" parent="Theme.MaterialDesign">
+    <style name="MyBlueStyle" parent="MyBaseTheme">
         <item name="superColor">@color/blue</item>
     </style>
 
-    <style name="MyGreenStyle" parent="Theme.MaterialDesign">
+    <style name="MyGreenStyle" parent="MyBaseTheme">
         <item name="superColor">@color/green</item>
     </style>
 

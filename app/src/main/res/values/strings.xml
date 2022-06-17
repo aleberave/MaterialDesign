@@ -12,9 +12,9 @@
     <string name="todo">TODO</string>
     <string name="onScreen1">На экран 1</string>
     <string name="onScreen2">На экран 2</string>
-    <string name="today">Сегодня</string>
-    <string name="yesterday">Вчера</string>
-    <string name="TDBY">Позавчера</string>
+    <string name="today">TODAY</string>
+    <string name="yesterday">YESTERDAY</string>
+    <string name="TDA">TWO DAYS AGO</string>
     <string name="menu1">Меню 1</string>
     <string name="menu2">Меню 2</string>
     <string name="menu3">Меню 3</string>
